@@ -7,7 +7,6 @@
  * @since Chirp 1.0
  */
 ?>
-abc
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="entry-header">
             <div class="entry-date">
