@@ -89,8 +89,8 @@
 			?>
 				<?php //aihtemp get_search_form(); ?>
 			<?php endif; ?>
-            
-			<div id="chirpTel" title="Tel:415 331 NANI(6264)"><sup>tel</sup> 415 331 nani<small>(</small>6264<small>)</small></div>
+            <div id="chirpEmail">&gt;&gt; call or <a href="mailto:info@chirpchirpchirp.com">click to email</a> for a free consultation!</div>
+			<div id="chirpTel"><sup>tel</sup> 415 331 nani<small>(</small>6264<small>)</small></div>
             
 			<div id="access" role="navigation">
             	
@@ -115,17 +115,17 @@
                 <div id="chirpMenu">
                 	<ul>
                     <?php $wpurl = get_bloginfo('wpurl'); ?>
-                    	<li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>" title="the Chirp Difference" id="theChirpDifference" <?php if ( 'the-chirp-difference' == $blockname )  { ?>class="current" <?php }//end if ?>>the Chirp Difference</a></li>
-                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/the-best-fit-nanny/" title="the Best Fit Nanny" id="theBestFitNannies" <?php if ( 'the-best-fit-nanny' == $blockname )  { ?>class="current" <?php }//end if ?>>the Best Fit Nannies</a></li>
-                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/our-nest/" title="Our Nest" id="ourNest" <?php if ( 'our-nest' == $blockname )  { ?>class="current" <?php }//end if ?> >Our Nest</a></li>
-                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/faq/" title="FAQ" id="FAQ" <?php if ( 'faq' == $blockname )  { ?>class="current" <?php }//end if ?> >FAQ</a></li>
-                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/blog/" title="Chirp Blog" id="chirpBlog" <?php if ( 'the-chirp-difference' != $blockname && (is_home() || !is_page()))  { ?>class="current" <?php }//end if ?> >Chirp Blog</a></li>
+                    	<li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/the-chirp-difference" id="theChirpDifference" <?php if ( 'the-chirp-difference' == $blockname )  { ?>class="current" <?php }//end if ?>>the chirp <br />difference</a></li>
+                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/a-little-more-about-us/" id="aLittleMoreAboutUs" <?php if ( 'the-best-fit-nanny' == $blockname )  { ?>class="current" <?php }//end if ?>>a little more <br />about us</a></li>
+                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/blog/" id="chirpBlog" <?php if ( 'the-chirp-difference' != $blockname && (is_home() || !is_page()))  { ?>class="current" <?php }//end if ?> >in-depth <br />faq/blog</a></li>
+                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/for-nannies/" id="forNannies" <?php if ( 'faq' == $blockname )  { ?>class="current" <?php }//end if ?> >for nannies <br />(apply here)</a></li>
+                        
                     </ul>
                 </div><!-- #chirpMenu -->
            		
 			</div><!-- #access -->
             
-			<div id="nannyCandidates"><a href="<?php echo($wpurl ); ?>/nanny-candidates/" title="Nanny Candidates">nanny candidates  ::click here::</a></div><!-- #nannyCandidates -->
+			<div id="chirpIntro">chirp is the the official nanny placement agency <br />of the 2012-2013 america’s cup, in san francisco.</div><!-- #chirpIntro -->
             
 	</div><!-- #branding -->
 

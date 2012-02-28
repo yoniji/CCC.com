@@ -3,7 +3,7 @@ Theme Name: Chirp
 Theme URI: http://chirpchirpchirp.com/
 Description: The 2011 theme for WordPress.
 Author: chirpchirpchirp.com
-Version: 1.0
+Version: 2.0
 License: GNU General Public License
 License URI: license.txt
 Tags: chirp, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
@@ -427,7 +427,7 @@ a:hover {
 #access {
 	background:url(images/navbg.jpg) no-repeat;
 	width:675px;
-	height:80px;
+	height:85px;
 	float:right;
 	display:inline;
 	position:relative;
@@ -444,43 +444,48 @@ a:hover {
 	background:url(images/cstitleright.jpg) no-repeat;
 }
 #chirpMenu {
-	padding:23px 0 0 63px;
+	padding:18px 0 0 90px;
 }
 .chirpMenu-item {
 	float:left;
 	display:inline;
-	height:30px;
+	height:40px;
 }
 .chirpMenu-item a {
-	text-indent:-9999px;
 	display:block;
 	height:100%;
-	background:url(images/navtxt.jpg) no-repeat left top;
+	color:#fff;
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	letter-spacing:3px;
+	line-height:18px;
+	margin-right:40px;
 }
-#theChirpDifference {width:135px;}
-#theChirpDifference.current,#theChirpDifference:hover {background-position:0 -30px;}
-#theBestFitNannies {width:160px;background-position:-135px top;}
-#theBestFitNannies.current,#theBestFitNannies:hover {background-position:-135px -30px;}
-#ourNest {width:95px;background-position:-295px top;}
-#ourNest.current,#ourNest:hover {background-position:-295px -30px;}
-#FAQ {width:85px;background-position:-390px top;}
-#FAQ.current,#FAQ:hover {background-position:-390px -30px;}
-#chirpBlog {width:125px;background-position:-475px top;}
-#chirpBlog.current,#chirpBlog:hover {background-position:-475px -30px;}
+#forNannies {
+	margin-right:-10px;
+}
+.chirpMenu-item a:hover,.chirpMenu-item a:active,.chirpMenu-item .current {
+	color:#E9D666;
+}
 
 /* =Chirp Specific
 -------------------------------------------------------------- */
-#chirpTel,#nannyCandidates {
+#chirpTel,#chirpIntro,#chirpEmail {
 	text-align:right;
 	float:right;
 	display:inline;
-}
-#chirpTel sup,#nannyCandidates {
+	width:560px;
 	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
 }
+#chirpEmail {
+	margin:0 30px 0 0;
+	color:#8e857c;
+	font-size:23px;
+	letter-spacing:2px;
+	word-spacing:1px;
+}
 #chirpTel {
-	font-family:'EideticNeoSmallcaps', Arial, Helvetica, sans-serif;
-	margin:35px 30px 10px 0;
+	margin:5px 30px 15px 0;
 	font-size:28px;
 	letter-spacing:1px;
 	word-spacing:1px;
@@ -494,20 +499,19 @@ a:hover {
 	font-size:18px;
 	bottom:5px;
 }
-#nannyCandidates {
+#chirpIntro {
 	margin:0 20px 0 0;
-	font-size:24px;
-	letter-spacing:3px;
+	width:550px;
+	text-align:left;
+	font-size:23px;
+	letter-spacing:2px;
 }
-#nannyCandidates a {
+#chirpIntro,#chirpEmail a{
 	color:#E1A374;
 }
-#nannyCandidates a:hover,#nannyCandidates a:focus,#nannyCandidates a:active {
-	color:#e8d766;
-	text-decoration:none;
-	
+#chirpEmail a:hover,#chirpEmail a:active {
+	color:#E9D666;
 }
-
 /* =Widget
 -------------------------------------------------------------- */
 #blog-title {
