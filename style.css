@@ -118,16 +118,15 @@ padding:20px 0 30px;
 #primary {
 	float: right;
 	display:inline;
-	width: 600px;
+	width: 560px;
 }
 #content {
-	margin: 0 10px 0 0;
-	width: 580px;
+	margin-right:20px;
 }
 #secondary {
 	float: left;
 	display:inline;
-	width: 240px;
+	width: 320px;
 	margin:40px 0 0 20px;
 }
 
@@ -199,7 +198,17 @@ padding:20px 0 30px;
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'SansarahRegular';
+    src: url('fonts/sansarah-regular-webfont.eot');
+    src: url('fonts/sansarah-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sansarah-regular-webfont.woff') format('woff'),
+         url('fonts/sansarah-regular-webfont.ttf') format('truetype'),
+         url('fonts/sansarah-regular-webfont.svg#SansarahRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 /* =Global
 ----------------------------------------------- */
 body, input, textarea {
@@ -605,10 +614,11 @@ a:hover {
 	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
 	text-transform:lowercase;
 	color:#E8D766;
-	font-size:20px;
-	line-height:25px;
+	font-size:28px;
+	line-height:28px;
 	letter-spacing:2px;
-	padding-left:20px;
+	padding:0 10px 10px 0;
+	border-bottom:1px dashed #888888;
 }
 #Subscribe p {
 	margin-bottom:5px;
@@ -631,7 +641,7 @@ a:hover {
 /* =Content
 ----------------------------------------------- */
 .post {
-	margin-bottom:30px;
+	margin:30px 0;
 	padding-bottom:15px;
 	background:url(images/hdiv.jpg) no-repeat center bottom;
 }
@@ -1195,6 +1205,48 @@ p.comment-form-comment {
 }
 
 
+/* =common style for pages
+----------------------------------------------- */
+.page-content h1 {
+	font-family:'EideticNeoBlack',Georgia, "Times New Roman", Times, serif;
+	color:#655F5A;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing:1px;
+	margin-bottom:20px;
+}
+.page-content a {
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	font-size:22px;
+	color:#E1A374;
+}
+.page-content a:hover,.page-content a:active {
+	color:#E8D766;
+}
+/* =Home
+----------------------------------------------- */
+#home-photo {
+background:url(images/home-photo.png) no-repeat;
+width:402px;
+height:308px;
+margin:-20px 0 0 -65px;
+
+}
+#subscribeContainer {
+background:url(images/bird-y.jpg) no-repeat left top;
+padding-left:75px;
+}
+#subcribe-title {
+	text-align:right;
+}
+#subcribe-intro {
+	font-family: 'SansarahRegular',Georgia, "Times New Roman", Times, serif;
+	font-size:20px;
+	line-height:26px;
+	text-align:center;
+	color:#010101;
+	margin:10px 0;
+}
 /* =the Chirp Difference
 ----------------------------------------------- */
 #tcd-content {
@@ -1323,7 +1375,7 @@ margin-top:40px;
 }
 .page .entry-content {
 padding-left:30px;
-padding-right:40px;
+padding-right:10px;
 }
 
 .pageNav{
