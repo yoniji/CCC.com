@@ -125,7 +125,7 @@
            		
 			</div><!-- #access -->
             
-			<div id="chirpIntro">chirp is the the official nanny placement agency <br />of the 2012-2013 america’s cup, in san francisco.</div><!-- #chirpIntro -->
+			<div id="chirpIntro">chirp is an official nanny placement agency<br />of the 2012-2013 america’s cup, in san francisco. </div><!-- #chirpIntro -->
             
 	</div><!-- #branding -->
 
