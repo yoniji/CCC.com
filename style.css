@@ -358,7 +358,7 @@ input#s {
 
 /* Links */
 a {
-	color:#94b4ae;
+	color:#709D9E;
 	text-decoration:none;
 }
 a:focus,
@@ -785,15 +785,30 @@ blockquote {
 /* =footer
 -------------------------------------------------------------- */ 
 #site-generator {
-text-align:left;
-padding-left:20px;
-font-size:12px;
+text-align:center;
+font-size:14px;
+color:#888888;
 } 
 #site-generator p {
 margin-bottom:0;
 }
 
-
+#siteMap {
+	margin:25px 0 15px;
+	padding:10px 0px 10px 40px;
+	border-width:1px 0;
+	border-style:dashed;
+	border-color: #c1bdb4;
+}
+.siteMap-item,.siteMap-div {
+	float:left;
+	display:inline;
+	color:#709D9E;
+	letter-spacing:1px;
+	margin:0 5px;
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
 
 /* =Gallery listing
 -------------------------------------------------------------- */
@@ -1186,6 +1201,17 @@ p.comment-form-comment {
 	letter-spacing:1px;
 	margin-bottom:20px;
 }
+.page-content h2 {
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	font-size:22px;
+	color:#709D9E;
+	letter-spacing:4px;
+
+}
+.page-content strong {
+	color:#010101;
+	font-weight:normal;
+}
 .page-content a {
 	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
 	font-size:22px;
@@ -1193,6 +1219,40 @@ p.comment-form-comment {
 }
 .page-content a:hover,.page-content a:active {
 	color:#E8D766;
+}
+.tipsWidget {
+background:url(images/bird-r.jpg) no-repeat left top;
+padding-left:65px;
+margin:10px 20px 0 -20px;
+	
+}
+.tips-title {
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	color:#E1A374;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing:2px;
+	padding:0 0 10px 0;
+	border-bottom:1px dashed #c1bdb4;
+	text-align:center;
+}
+.tips-item {
+	font-family: 'SansarahRegular',Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	line-height:22px;
+	text-align:center;
+	color:#010101;
+	padding:20px 0px 10px;
+	border-bottom:1px dashed #c1bdb4;
+}
+#results .tips-item {
+	font-size:20px;
+}
+.tips-item p {
+	margin-bottom:10px;
+}
+.tips-meta {
+	color:#676767;
 }
 /* =Home
 ----------------------------------------------- */
@@ -1202,6 +1262,42 @@ width:402px;
 height:308px;
 margin:-20px 0 0 -65px;
 
+}
+#home-book {
+	background:url(images/bookbg.jpg);
+	border:1px dashed #c1bdb4;
+	padding:15px; 
+	margin:35px auto;
+	width:460px;
+}
+#home-book-title {
+	text-indent:-30px;
+	margin-left:30px;
+}
+#home-book-buyLink {
+	color:#010101;
+	display:block;
+	float:right;
+	margin-right:15px;
+	padding-right:110px;
+	height:30px;
+	background:url(images/amazonlogo.png) no-repeat right 5px;
+	margin-bottom:0;
+}
+#home-book-buyLink:hover,#home-book-buyLink:active {
+	background-position: right -20px;
+}
+#home-book-title,#home-book-buyLink {
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	font-size:22px;
+	letter-spacing:1px;
+}
+#home-book-title,#home-book-intro {
+	color:#4266B0;
+}
+#home-book-intro {
+	margin:15px 10px 15px 30px;
+	line-height:1.2em;
 }
 #subscribeContainer {
 background:url(images/bird-y.jpg) no-repeat left top;
@@ -1227,7 +1323,6 @@ margin:10px 20px 0 -20px;
 }
 #subcribe-title {
 	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
-	text-transform:lowercase;
 	color:#E8D766;
 	font-size:28px;
 	line-height:28px;
@@ -1253,109 +1348,61 @@ margin:10px 20px 0 -20px;
 	line-height:28px;
 	padding:0 8px;
 }
+
+/* member of */
+#memberOfContainer {
+background:url(images/bird-p.jpg) no-repeat left top;
+padding-left:65px;
+margin:35px 20px 0 -20px;
+}
+#memberOfContainer h3 {
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	color:#b89eb7;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing:2px;
+	padding:0 10px 10px 0;
+	border-bottom:1px dashed #c1bdb4;
+	text-align:center;	
+}
+#memberOf {
+	margin:15px -10px 0 0;
+}
+#inaLink,#naeycLink,#zttLink,#naswLink {
+	display: inline-block;
+	margin:0 0 15px 5px;
+}
+#inaLink {
+	background:url(images/inalogo.jpg) no-repeat;
+	width:118px;
+	height:44px;
+}
+#naeycLink {
+	background:url(images/naeyclogo.jpg) no-repeat;
+	width:119px;
+	height:44px;	
+}
+#zttLink {
+	background:url(images/zttlogo.jpg) no-repeat;
+	width:74px;
+	height:52px;	
+}
+#naswLink {
+	background:url(images/naswlogo.jpg) no-repeat;
+	width:145px;
+	height:49px;
+	margin-left:20px;
+}
 /* =the Chirp Difference
 ----------------------------------------------- */
-#tcd-content {
-	margin:20px 40px;
 
-}
-#tcd-top {
-background:url(images/tcd-sidebar-photo.png) no-repeat left 20px;
-padding-left:430px;
-margin:0 -20px 15px -85px;
-}
-.tcd-topTitle {
-width:508px;
-font-family:'EideticNeoBlack',Georgia, "Times New Roman", Times, serif;
-font-size:28px;
-line-height:28px;
-margin-bottom:10px;
-color:#655F5A;
-
-}
-.tcd-topContent {
-line-height:1.4em;
-}
-.tcd-topContent p {
-margin-bottom:0.5em;
-}
-#tcd-bottom {
-background:url(images/tcd-hr.png) top center no-repeat;
-padding-top:45px;
-}
-.tcd-bottom-block {
-float:left;
-display:inline;
-width:265px;
-margin-right:35px;
-}
-#tcd-bottom-leftIntro,#tcd-bottom-centerIntro {
-background:url(images/tcd-titles.png) left -55px;
-width:265px;
-height:45px;
-text-indent:-9999px;
-}
-#tcd-bottom-leftTitle a,#tcd-bottom-centerTitle a {
-font-family:'EideticNeoBlack',Georgia, "Times New Roman", Times, serif;
-font-size:24px;
-line-height:24px;
-width:250px;
-display:block;
-margin:20px 0 10px 5px;
-color:#655F5A;
-}
-#tcd-bottom-leftTitle a:hover {color:#E8D766;text-decoration:none;}
-#tcd-bottom-centerTitle a:hover {color:#E1A374;text-decoration:none;}
-#tcd-bottom-centerIntro {
-background-position:-265px -55px;
+#the-chirp-difference-photo {
+	background:url(images/tcd-sidebar-photo.png) no-repeat;
+	width:402px;
+	height:308px;
+	margin:-20px 0 0 -65px;
 }
 
-
-.tcd-bottomContent {
-max-height:132px;
-overflow:hidden;
-line-height:22px;
-padding:0 5px;
-}
-＃ie6 .tcd-bottomContent,#ie7 .tcd-bottomContent,#ie8 .tcd-bottomContent {
-height:132px;	
-}
-.tcd-bottomContent p{
-margin-bottom:0.5em;
-
-}
-.tcd-bottomLinks {
-text-align:right;
-padding:5px;
-}
-.tcd-bottomLinks {
-font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
-font-size:18px;
-
-text-transform:lowercase;
-letter-spacing:2px;
-}
-.tcd-bottomLinks a:hover {
-text-decoration:none;
-
-}
-
-#tcd-book {
-float:right;
-display:inline;
-}
-#tcd-book-link {
-background:url(images/tcd-books.png) no-repeat;
-width:225px;
-height:266px;
-display:block;
-}
-#tcd-book-link:hover {
-background-position:-225px top;
-}
-#site-generator.tcd-footer {
-text-align:center;
-}
 /* =PAGES
 -----------------------------------------------*/
 .parent-title,#faq-header {
@@ -1461,14 +1508,7 @@ margin:-20px 0 0 -65px;
 color:#655F5A;
 }
 
-#the-chirp-difference-photo {
-	background:url(images/tcd-sidebar-photo2.png) no-repeat;
-	width:326px;
-	height:447px;
-	position:relative;
-	left:-70px;
-	margin-top:-20px;
-}
+
 #our-nest-photo {
 	background:url(images/ournest-sidebar-photo.png) no-repeat;
 	width:327px;

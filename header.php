@@ -115,10 +115,10 @@
                 <div id="chirpMenu">
                 	<ul>
                     <?php $wpurl = get_bloginfo('wpurl'); ?>
-                    	<li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/the-chirp-difference" id="theChirpDifference" <?php if ( 'the-chirp-difference' == $blockname )  { ?>class="current" <?php }//end if ?>>the chirp <br />difference</a></li>
-                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/a-little-more-about-us/" id="aLittleMoreAboutUs" <?php if ( 'the-best-fit-nanny' == $blockname )  { ?>class="current" <?php }//end if ?>>a little more <br />about us</a></li>
+                    	<li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/the-chirp-difference/" id="theChirpDifference" <?php if ( 'the-chirp-difference' == $blockname )  { ?>class="current" <?php }//end if ?>>the chirp <br />difference</a></li>
+                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/a-little-more-about-us/" id="aLittleMoreAboutUs" <?php if ( 'a-little-more-about-us' == $blockname )  { ?>class="current" <?php }//end if ?>>a little more <br />about us</a></li>
                         <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/blog/" id="chirpBlog" <?php if ( 'the-chirp-difference' != $blockname && (is_home() || !is_page()))  { ?>class="current" <?php }//end if ?> >in-depth <br />faq/blog</a></li>
-                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/for-nannies/" id="forNannies" <?php if ( 'faq' == $blockname )  { ?>class="current" <?php }//end if ?> >for nannies <br />(apply here)</a></li>
+                        <li class="chirpMenu-item"><a href="<?php echo($wpurl ); ?>/for-nannies/" id="forNannies" <?php if ( 'for-nannies' == $blockname )  { ?>class="current" <?php }//end if ?> >for nannies <br />(apply here)</a></li>
                         
                     </ul>
                 </div><!-- #chirpMenu -->

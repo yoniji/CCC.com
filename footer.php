@@ -13,10 +13,20 @@
 	</div><!-- #main -->
 
 	<div id="colophon" role="contentinfo">
-
-			<div id="site-generator"  <?php if(is_page('the-chirp-difference')) { ?> class="tcd-footer" <?php } ?> >
-				<p>&copy;2011 Chirp Design by 13 Creative </p>
-                <p><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'chirp' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'chirp' ); ?>" rel="generator"><?php printf( __( 'Powered by %s', 'chirp' ), 'WordPress' ); ?></a> </p>
+          <ul id="siteMap" class="clearfix">
+                 <li class="siteMap-item"><a href="<?php echo($wpurl ); ?>">home</a></li>
+                 <li class="siteMap-div">&sdot;</li>
+                 <li class="siteMap-item"><a href="<?php echo($wpurl ); ?>/the-chirp-difference/">the chirp difference</a></li>
+                 <li class="siteMap-div">&sdot;</li>
+                 <li class="siteMap-item"><a href="<?php echo($wpurl ); ?>/a-little-more-about-us/">a little more about us</a></li>
+                  <li class="siteMap-div">&sdot;</li>
+                 <li class="siteMap-item"><a href="<?php echo($wpurl ); ?>/blog/">faq/blog</a></li>
+                  <li class="siteMap-div">&sdot;</li>
+                 <li class="siteMap-item"><a href="<?php echo($wpurl ); ?>/for-nannies/">for nannies (apply here)</a></li>
+                        
+            </ul>
+			<div id="site-generator" >
+				<p>&copy;2012 Chirp Design by 13 Creative </p>
 			</div>
 	</div><!-- #colophon -->
 </div><!-- #page -->
