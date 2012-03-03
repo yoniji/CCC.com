@@ -13,13 +13,12 @@ $current_layout = '';
 if ( 'content' != $current_layout ) :
 ?>
 		<div id="secondary" class="widget-area" role="complementary">
-        	<div id="blog-title"><a href="<?php echo($wpurl ); ?>/blog/" title="Chirp Blog">Chirp Blog</a></div>
 			<?php if ( ! dynamic_sidebar( 'sidebar-blog' ) ) : ?>
 
-				<div id="archives" class="widget">
-					<h3 class="widget-title"><?php _e( 'Archives', 'chirp' ); ?></h3>
+				<div id="blog-categories" class="widget widget_categories">
+					<h3 class="parent-title">categories</h3>
 					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+						<?php wp_list_categories('hide_empty=0&title_li='); ?>
 					</ul>
 				</div>
 

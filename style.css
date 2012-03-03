@@ -583,6 +583,9 @@ a:hover {
 }
 
 /* Categories */
+.widget_categories {
+	padding-right:20px;
+}
 .widget_categories .widget-title,.widget_nav_menu  .widget-title{
 	background:url(images/titlebg.jpg) left -27px repeat-x;
 	height:27px;
@@ -605,7 +608,8 @@ a:hover {
 	margin-bottom:0.8em;
 }
 .cat-item .children, .menu-item .children {
-	margin-left:2em;
+	padding:0.8em 0 0 0.8em;
+	border-bottom:1px dashed #8E857C;
 }
 
 
@@ -641,9 +645,7 @@ a:hover {
 .entry-format {
 	margin:15px 0;  
 }
-.entry-meta,.entry-format {
-	font:12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 .entry-title a { color:#655f5a;}
 .entry-title a:hover {color:#e8d766;}
 
@@ -655,12 +657,15 @@ a:hover {
 	height:30px;
 }
 
-.entry-date,.nav-previous,.nav-next,.readMore {
+.entry-date,.nav-previous,.nav-next,.readMore,.entry-meta,.entry-format {
 font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
 font-size:18px;
-
 text-transform:lowercase;
 letter-spacing:2px;
+}
+.sep {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
 }
 
 .facebookLikeButton {
@@ -1403,6 +1408,12 @@ margin:35px 20px 0 -20px;
 	margin:-20px 0 0 -65px;
 }
 
+#loginframe {
+	margin-top:10px;
+	background:url(images/bookbg.jpg);
+	border:1px dashed #8E857C;
+	padding:10px 0 0 15px;
+}
 /* =PAGES
 -----------------------------------------------*/
 .parent-title,#faq-header {

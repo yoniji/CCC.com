@@ -84,34 +84,6 @@ function chirp_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-	register_sidebar( array(
-		'name' => __( 'the Best Fit Nanny Sidebar', 'chirp' ),
-		'id' => 'sidebar-the-best-fit-nanny',
-		'description' => __( 'An optional widget area for the best fit nanny', 'chirp' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => "</div>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-	
-	register_sidebar( array(
-		'name' => __( 'FAQ Sidebar', 'chirp' ),
-		'id' => 'sidebar-faq',
-		'description' => __( 'The left sidebar for the FAQ page Template', 'chirp' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => "</div>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Our Nest Sidebar', 'chirp' ),
-		'id' => 'sidebar-our-nest',
-		'description' => __( 'An optional widget area for Our Nest', 'chirp' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => "</div>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
 
 }
 add_action( 'widgets_init', 'chirp_widgets_init' );
