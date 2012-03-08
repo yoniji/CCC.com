@@ -464,21 +464,21 @@ a:hover {
 	height:100%;
 	color:#fff;
 	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
-	text-shadow:1px 1px 0 #655F5A;
+	text-shadow:1px 1px 0 #E8D766;
 	font-size: 18px;
 	letter-spacing:3px;
 	line-height:18px;
 	margin-right:40px;
 	
-	filter:(Color=#655F5A,Direction=135,Strength=1);
+	filter:(Color=#E8D766,Direction=135,Strength=1);
 }
 #forNannies {
 	margin-right:-10px;
 }
 .chirpMenu-item a:hover,.chirpMenu-item a:active,.chirpMenu-item .current {
-	color:#E9D666;
-	text-shadow:1px 1px 0 #655F5A;
-	filter:(Color=#655F5A,Direction=135,Strength=1);
+	color:#655f5a;
+	text-shadow:1px 1px 0 #ccddc9;
+	filter:(Color=#ccddc9,Direction=135,Strength=1);
 }
 
 /* =Chirp Specific
@@ -489,6 +489,7 @@ a:hover {
 	display:inline;
 	width:560px;
 	font-family:'FilosofiaSmallCaps',Arial, Helvetica, sans-serif;
+	
 }
 
 #chirpEmail {
@@ -504,6 +505,15 @@ a:hover {
 	letter-spacing:1px;
 	word-spacing:1px;
 	color:#8e857c;
+}
+#chirpTel-text {
+	display:inline-block;
+	width:235px;
+	height:21px;
+	text-indent:-9999px;
+	background:url(images/tel.png) no-repeat right bottom;
+	position:relative;
+	top:4px;
 }
 #chirpTel small {
 	font-size:24px;
@@ -538,7 +548,7 @@ a:hover {
 	width:100%;height:100%;display:block;text-indent:-9999px;
 }
 .widget {
-	margin:30px 0;
+	margin-bottom:30px;
 }
 .widget-title {
 	color:#655f5a;
@@ -573,7 +583,7 @@ a:hover {
 	display:none;
 }
 .widget_search #s {
-	width:140px;
+	width:180px;
 	margin-right:3px;
 }
 
@@ -583,10 +593,41 @@ a:hover {
 }
 
 /* Categories */
-.widget_categories {
-	padding-right:20px;
+#blog-categories {
+
 }
-.widget_categories .widget-title,.widget_nav_menu  .widget-title{
+.parent-title,#faq-header {
+font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+font-size:28px;
+text-indent:-30px;
+padding-left:30px;
+
+text-transform:lowercase;
+letter-spacing:2px;
+
+-moz-transform: rotate(359deg);
+-webkit-transform: rotate(359deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=359);
+
+color:#655F5A;
+margin-top:40px;
+}
+.parent-title {
+	color:#E9D666;
+}
+.widget_categories {
+	padding-right:30px;
+	width:280px;
+}
+.widget_categories .widget-title,.widget_nav_menu  .widget-title {
+	margin-bottom:20px;
+}
+.widget_categories>ul {
+	padding-top:10px;
+	border-top:1px dashed #8E857C;
+	padding-left: 0.8em;
+}
+.widget_categories>ul>.cat-item-first{
 	background:url(images/titlebg.jpg) left -27px repeat-x;
 	height:27px;
 	width:auto;
@@ -608,7 +649,8 @@ a:hover {
 	margin-bottom:0.8em;
 }
 .cat-item .children, .menu-item .children {
-	padding:0.8em 0 0 0.8em;
+	padding:0.8em 0 0.5em 2em;
+	margin-left:-1em;
 	border-bottom:1px dashed #8E857C;
 }
 
@@ -636,11 +678,17 @@ a:hover {
 
 }
 .entry-title {
-	margin:15px 0;
+	margin:15px 0 10px;
 	font-size:22px;
 	line-height:28px;
 	color:#373737;
 	text-shadow:#FFF 1px 1px 0;
+}
+.entry-title {
+	font-family:'EideticNeoBlack',Georgia, "Times New Roman", Times, serif;
+	font-size:28px;
+	line-height:28px;
+	letter-spacing:1px;
 }
 .entry-format {
 	margin:15px 0;  
@@ -959,7 +1007,7 @@ margin-bottom:0;
 }
 .commentlist {
 	list-style: none;
-	margin: 0 0 0 102px;
+	margin: 0 0 0 80px;
 	width: 80%;
 }
 .content .commentlist,
@@ -967,7 +1015,7 @@ margin-bottom:0;
 	width: 100%; /* reset the width for the one-column and sidebar page layout */
 }
 .commentlist > li.comment {
-	background: #FFFEFA;
+	background: #FFFEFA url(images/bookbg.jpg);
 	border: 1px solid #ddd;
 	-moz-border-radius: 3px;
 	border-radius: 5px;
@@ -1026,19 +1074,12 @@ margin-bottom:0;
 	-webkit-box-shadow: 0 1px 2px #ccc;
 	-moz-box-shadow: 0 1px 2px #ccc;
 	box-shadow: 0 1px 2px #ccc;
-	left: -102px;
+	left: -80px;
 	padding: 0;
 	position: absolute;
 	top: 0;
 }
-.commentlist > li:before {
-	content: url(images/comment-arrow.png);
-	left: -21px;
-	position: absolute;
-}
-.commentlist > li.pingback:before {
-	content: '';
-}
+
 .commentlist .children .avatar {
 	background: none;
 	-webkit-box-shadow: none;
@@ -1087,7 +1128,7 @@ a.comment-reply-link > span {
 /* Make sure we have room for our comment avatars */
 .page-template-sidebar-page-php .commentlist > li.comment,
 .page-template-sidebar-page-php.commentlist .pingback {
-	margin-left: 102px;
+	margin-left: 80px;
 	width: auto;
 }
 /* And a full-width comment form */
@@ -1098,7 +1139,7 @@ a.comment-reply-link > span {
 /* Comment Form */
 #respond {
 	margin: 3em auto 1.625em;
-	padding: 1.625em 1.625em 1.625em 102px;
+	padding: 1.625em 1.625em 1.625em 80px;
 	position: relative;
 }
 #respond input[type="text"],
@@ -1198,6 +1239,9 @@ p.comment-form-comment {
 
 /* =common style for pages
 ----------------------------------------------- */
+.page-content {
+	padding-top:30px;
+}
 .page-content h1 {
 	font-family:'EideticNeoBlack',Georgia, "Times New Roman", Times, serif;
 	color:#655F5A;
@@ -1217,10 +1261,13 @@ p.comment-form-comment {
 	color:#010101;
 	font-weight:normal;
 }
-.page-content a {
+.page-content a.pinklink,.page-content .pinklink a {
 	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
 	font-size:22px;
 	color:#E1A374;
+}
+.page-content a.bluelink,.page-content .bluelink a{
+	color:#4266B0;
 }
 .page-content a:hover,.page-content a:active {
 	color:#E8D766;
@@ -1251,7 +1298,7 @@ margin:10px 20px 0 -20px;
 	border-bottom:1px dashed #c1bdb4;
 }
 #results .tips-item {
-	font-size:20px;
+	font-size:22px;
 }
 .tips-item p {
 	margin-bottom:10px;
@@ -1416,22 +1463,7 @@ margin:35px 20px 0 -20px;
 }
 /* =PAGES
 -----------------------------------------------*/
-.parent-title,#faq-header {
-font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
-font-size:28px;
-text-indent:-30px;
-padding-left:30px;
 
-text-transform:lowercase;
-letter-spacing:2px;
-
--moz-transform: rotate(359deg);
--webkit-transform: rotate(359deg);
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=359);
-
-color:#655F5A;
-margin-top:40px;
-}
 .sub-page-title {
 	margin:30px 0 0 30px;
 	font-size:24px;
@@ -1457,13 +1489,13 @@ margin-bottom:30px;
 color:#E8D766;
 }
 
-/* =the Best Fit Nanny
+/* =a Little more about us
 ----------------------------------------------- */
-#the-best-fit-nanny-photo {
-background:url(images/tbfn-sidebar-photo.png) no-repeat;
-width:327px;
-height:445px;
-margin:-20px 0 0 -65px;
+#a-little-more-about-us-photo {
+background:url(images/aboutphoto.png) no-repeat;
+width:320px;
+height:407px;
+margin:-20px 0 0 -15px;
 
 }
 

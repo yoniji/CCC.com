@@ -76,15 +76,23 @@ function chirp_widgets_init() {
 
 
 	register_sidebar( array(
-		'name' => __( 'Blog Sidebar', 'chirp' ),
-		'id' => 'sidebar-blog',
-		'description' => __( 'The left sidebar for the Blog Template', 'chirp' ),
+		'name' => __( 'Blog Sidebar(Above Categories)', 'chirp' ),
+		'id' => 'blog-sidebar-above-categories',
+		'description' => __( 'The left sidebar for the Blog, above the categories', 'chirp' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget' => "</div>",
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
+	register_sidebar( array(
+		'name' => __( 'Blog Sidebar(Below Categories)', 'chirp' ),
+		'id' => 'blog-sidebar-below-categories',
+		'description' => __( 'The left sidebar for the Blog, below the categories', 'chirp' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => "</div>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'chirp_widgets_init' );
 

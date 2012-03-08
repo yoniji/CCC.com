@@ -90,7 +90,7 @@
 				<?php //aihtemp get_search_form(); ?>
 			<?php endif; ?>
             <div id="chirpEmail">&gt;&gt; call or <a href="mailto:info@chirpchirpchirp.com">click to email</a> for a free consultation!</div>
-			<div id="chirpTel"><sup>tel</sup> 415 331 nani<small>(</small>6264<small>)</small></div>
+			<div id="chirpTel"><sup>tel</sup><span id="chirpTel-text" title="415 331 nani(6264)"></span></div>
             
 			<div id="access" role="navigation">
             	
