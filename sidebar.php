@@ -17,8 +17,8 @@ if ( 'content' != $current_layout ) :
 
 			<?php endif; // end sidebar widget area ?>
 			<div id="blog-categories" class="widget widget_categories">
-					<h3 class="parent-title widget-title">&gt;&gt; categories</h3>
-					<ul>
+					<h3 class="category-titile widget-title">&gt;&gt; categories</h3>
+					<ul class="widget-cat-list">
 						<?php wp_list_categories('hide_empty=0&title_li='); ?>
 					</ul>
 			</div>

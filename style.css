@@ -610,24 +610,11 @@ letter-spacing:2px;
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=359);
 
 color:#655F5A;
-margin-top:40px;
 }
 .parent-title {
 	color:#E9D666;
 }
-.widget_categories {
-	padding-right:30px;
-	width:280px;
-}
-.widget_categories .widget-title,.widget_nav_menu  .widget-title {
-	margin-bottom:20px;
-}
-.widget_categories>ul {
-	padding-top:10px;
-	border-top:1px dashed #8E857C;
-	padding-left: 0.8em;
-}
-.widget_categories>ul>.cat-item-first{
+.category-titile {
 	background:url(images/titlebg.jpg) left -27px repeat-x;
 	height:27px;
 	width:auto;
@@ -642,23 +629,57 @@ margin-top:40px;
 	font-size:20px;
 	line-height:27px;
 	letter-spacing:2px;
+	margin-top:20px;
+}
+.widget_categories {
+	padding-right:30px;
+	width:280px;
+}
+.widget_categories .widget-title,.widget_nav_menu  .widget-title {
+	margin-bottom:20px;
+}
+.widget_categories>ul {
+	/*
+	padding-top:10px;
+	border-top:1px dashed #8E857C;
+	padding-left: 0.8em;*/
+}
+.widget-cat-list>.cat-item>a{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
 	
+}
+.widget-cat-list-2>.cat-item>a {
+	background:url(images/titlebg.jpg) left -27px repeat-x;
+	height:27px;
+	width:auto;
+	padding:0 10px;
+	display:inline-block;
+	clear:both;
+	margin-bottom:15px;
+	color:#FFF;
+	font-family:'FilosofiaSmallCaps', Arial, Helvetica, sans-serif;
+	text-transform:lowercase;
+	text-shadow:none;
+	font-size:20px;
+	line-height:27px;
+	letter-spacing:2px;
 }
 .cat-item,.menu-item {
 	line-height:1.2em;
-	margin-bottom:0.8em;
+	margin-bottom:0.5em;
 }
 .cat-item .children, .menu-item .children {
-	padding:0.8em 0 0.5em 2em;
+	padding:0.5em 0 0.3em 2em;
 	margin-left:-1em;
-	border-bottom:1px dashed #8E857C;
+	/*border-bottom:1px dashed #8E857C;*/
 }
 
 
 /* =Content
 ----------------------------------------------- */
 .post {
-	margin:30px 0;
+	margin:30px 0 20px;
 	padding-bottom:15px;
 	background:url(images/hdiv.jpg) no-repeat center bottom;
 }
@@ -901,11 +922,11 @@ margin-bottom:0;
 #content img {
 	margin: 0;
 	height: auto;
-	max-width: 480px;
+	max-width: 310px;
 	width: auto;
 }
 #content .attachment img {
-	max-width: 900px;
+	max-width: 500px;
 }
 #content .alignleft,
 #content img.alignleft {
@@ -1138,7 +1159,7 @@ a.comment-reply-link > span {
 
 /* Comment Form */
 #respond {
-	margin: 3em auto 1.625em;
+	margin: 1.625em auto;
 	padding: 1.625em 1.625em 1.625em 80px;
 	position: relative;
 }
